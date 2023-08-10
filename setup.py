@@ -26,9 +26,9 @@ setup(
     license="MIT",
     keywords=[
         "ACT-R",
-        "cognitive architecture",
-        "cognitive modelling",
-        "cognitive science",
+        "cognitive-architecture",
+        "cognitive-modelling",
+        "cognitive-science",
         "CogSci",
     ],
     packages=[
