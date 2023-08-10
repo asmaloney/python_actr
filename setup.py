@@ -1,20 +1,42 @@
+from pathlib import Path
 from setuptools import setup
 
 import python_actr
 
+# read the contents of the README file
+cwd = Path(__file__).parent
+long_description = (cwd / "README.md").read_text()
+
 setup(
-    name='python_actr',
-    packages=['python_actr', 'python_actr.display', 'python_actr.actr', 'python_actr.ui'],
+    name="actr",
     version=python_actr.version.version,
-    author='Carleton Cognitive Modelling Lab',
-    description='Python implementation of the ACT-R cognitive architecture',
-    url='https://github.com/CarletonCognitiveModelingLab/python_actr',
-    license='MIT',
+    description="Python implementation of the ACT-R cognitive architecture",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    author="Carleton Cognitive Modelling Lab",
+    maintainer="Andy Maloney (fork)",
+    url="https://github.com/asmaloney/python_actr",
     classifiers=[
-        'Development Status :: 4 - Beta',
-        'Intended Audience :: Science/Research',
-        'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 3',
-        'Topic :: Scientific/Engineering',
-        ]
-    )
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Science/Research",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python :: 3",
+        "Topic :: Scientific/Engineering",
+    ],
+    license="MIT",
+    keywords=[
+        "ACT-R",
+        "cognitive architecture",
+        "cognitive modelling",
+        "cognitive science",
+        "CogSci",
+    ],
+    packages=[
+        "python_actr",
+        "python_actr.display",
+        "python_actr.actr",
+        "python_actr.ui",
+    ],
+    python_requires=">=3.0",
+)
