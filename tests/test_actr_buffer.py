@@ -1,8 +1,6 @@
 import unittest
 
-import python_actr
-from python_actr import *
-
+from actr import *
 
 class Basic(ACTR):
     buffer1=Buffer()
