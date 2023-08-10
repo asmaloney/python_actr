@@ -1,15 +1,14 @@
 from pathlib import Path
 from setuptools import setup
 
-import python_actr
-
 # read the contents of the README file
 cwd = Path(__file__).parent
 long_description = (cwd / "README.md").read_text()
 
 setup(
     name="actr",
-    version=python_actr.version.version,
+    # version is the actr pip package (this is different from the python_actr version)
+    version="1.0.0",
     description="Python implementation of the ACT-R cognitive architecture",
     long_description=long_description,
     long_description_content_type="text/markdown",
