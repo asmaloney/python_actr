@@ -10,7 +10,7 @@ This fork of [python_actr](https://github.com/CarletonCognitiveModelingLab/pytho
 
 I created it because the main repository isn't being updated and I need a stable, running version via pip for my [gactar](https://github.com/asmaloney/gactar) project.
 
-Changes are noted in the [CHANGELOG](CHANGELOG.md).
+Changes are noted in the [CHANGELOG](https://github.com/asmaloney/python_actr/blob/main/CHANGELOG.md).
 
 The pip package for this fork is named [actr](https://pypi.org/project/actr/).
 
